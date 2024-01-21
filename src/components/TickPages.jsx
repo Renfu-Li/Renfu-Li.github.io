@@ -25,6 +25,7 @@ import {
   CardContent,
   CardMedia,
   Chip,
+  Container,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { TICK_PAGES } from "../constants";
@@ -32,109 +33,72 @@ import { TICK_PAGES } from "../constants";
 function TickPages() {
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((prev) => (prev === TICK_PAGES.length - 1 ? 0 : prev + 1));
-    }, 5000);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setIndex((prev) => (prev === TICK_PAGES.length - 1 ? 0 : prev + 1));
+  //   }, 5000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   const disablePrev = index === 0;
   const disableNext = index === TICK_PAGES.length - 1;
 
   return (
-    <Card
-      sx={{
-        display: "flex",
-        width: "85%",
-        mx: "auto",
-        flexDirection: { xs: "column", md: "row" },
-      }}
+    <Grid
+      container
+      justifyContent="space-between"
+      width="85%"
+      mx="auto"
+      rowSpacing={3}
     >
-      <CardMedia
-        component="img"
-        sx={{
-          maxWidth: { xs: "100%", md: "70%" },
-          flex: { xs: 1, md: "auto" },
-        }}
-        image={TICK_PAGES[index].src}
-        alt={TICK_PAGES[index].name}
-      />
-
-      <CardContent sx={{ width: "100%" }}>
-        <Stack justifyContent="space-between" height="100%">
-          <Stack spacing={1}>
-            <Stack direction="row" justifyContent="center" alignItems="center">
-              <IconButton
-                onClick={() => setIndex(index - 1)}
-                disabled={disablePrev}
-              >
-                <NavigateBeforeIcon
-                  color={disablePrev ? "default" : "primary"}
-                />
-              </IconButton>
-
-              <Typography variant="h6" width="95px">
-                {TICK_PAGES[index].name}
-              </Typography>
-
-              <IconButton
-                onClick={() => setIndex(index + 1)}
-                disabled={disableNext}
-              >
-                <NavigateNextIcon color={disableNext ? "default" : "primary"} />
-              </IconButton>
-            </Stack>
-
-            <List>
-              {TICK_PAGES[index].features.map((feature) => (
-                <ListItem key={feature}>
-                  {/* <ListItemText secondary={feature}></ListItemText> */}
-                  <ListItemIcon sx={{ minWidth: "36px" }}>
-                    <AutoAwesomeOutlinedIcon fontSize="small" />
-                  </ListItemIcon>
-                  <Typography fontSize="0.9em">{feature}</Typography>
-                </ListItem>
-              ))}
-            </List>
-          </Stack>
-
-          <Stack
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-            spacing={1}
+      {TICK_PAGES.map((page) => (
+        <Grid item key={page.id} xs={12} md={5.85}>
+          <Card
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              // width: "85%",
+              mx: "auto",
+            }}
           >
-            <Link
-              href="https://github.com/Renfu-Li/Tick-server"
-              target="_blank"
+            <CardMedia
+              component="img"
+              width="100%"
+              sx={
+                {
+                  // maxWidth: { xs: "100%", lg: "70%" },
+                  // flex: { xs: 1, md: "auto" },
+                }
+              }
+              image={page.src}
+              alt={page.name}
+            />
+
+            <Box
+              sx={{
+                paddingBottom: "16px",
+                paddingLeft: "16px",
+                bgcolor: "rgb(225, 227, 232)",
+              }}
             >
-              <Tooltip title="Backend respository" placement="top">
-                <Button>
-                  <FontAwesomeIcon icon={faNode} size="xl" />
-                </Button>
-              </Tooltip>
-            </Link>
-            <Link
-              href="https://github.com/Renfu-Li/Tick-client"
-              target="_blank"
-            >
-              <Tooltip title="Frontend repository" placement="top">
-                <Button>
-                  <FontAwesomeIcon icon={faReact} size="xl" />
-                </Button>
-              </Tooltip>
-            </Link>
-            <Tooltip title="Have a try!" placement="top">
-              <Button href="https://tick-o52t.onrender.com/" target="_blank">
-                <OpenInNewIcon color="primary" />
-              </Button>
-            </Tooltip>
-          </Stack>
-        </Stack>
-      </CardContent>
-    </Card>
+              <Stack justifyContent="space-between" height="100%">
+                <List dense>
+                  {page.features.map((feature) => (
+                    <ListItem key={feature}>
+                      <ListItemIcon sx={{ minWidth: "36px" }}>
+                        <AutoAwesomeOutlinedIcon fontSize="small" />
+                      </ListItemIcon>
+                      <Typography fontSize="0.9em">{feature}</Typography>
+                    </ListItem>
+                  ))}
+                </List>
+              </Stack>
+            </Box>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
   );
 }
 

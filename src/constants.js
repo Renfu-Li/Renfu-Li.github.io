@@ -4,9 +4,9 @@ export const TICK_PAGES = [
     name: "To-do list",
     features: [
       "Effortlessly create tasks with a due date",
-      "Check / uncheck tasks with ease",
-      "Easily change due date, move task or add note",
+      "Check / uncheck, and edit tasks with ease",
     ],
+    id: 0,
   },
   {
     src: "/src/assets/images/calendar.png",
@@ -15,6 +15,7 @@ export const TICK_PAGES = [
       "Click to add new task directly in calendar",
       "Edit a task by clicking it",
     ],
+    id: 1,
   },
   {
     src: "/src/assets/images/focus.png",
@@ -23,14 +24,13 @@ export const TICK_PAGES = [
       "Choose a task to start a Focus",
       "Add Focus note to record your thinking",
     ],
+    id: 2,
   },
   {
     src: "/src/assets/images/statistics.png",
     name: "Statistics",
-    features: [
-      "Summary of focus hours by day, week, month and year",
-      "Trend charts of focus hours",
-    ],
+    features: ["Summary of focus hours", "Trend charts of focus hours"],
+    id: 3,
   },
 ];
 
