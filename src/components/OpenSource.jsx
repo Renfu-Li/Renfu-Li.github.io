@@ -1,4 +1,5 @@
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,6 +28,10 @@ import {
   CardContent,
   CardMedia,
   Chip,
+  Container,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { OPEN_SOURCE } from "../constants";
@@ -65,7 +70,7 @@ function OpenSource() {
         alt={OPEN_SOURCE[index].name}
       />
 
-      <CardContent sx={{ height: "228px", paddingBottom: "!16px" }}>
+      <Container sx={{ padding: 0 }}>
         <Stack
           direction="row"
           justifyContent="space-evenly"
@@ -99,20 +104,27 @@ function OpenSource() {
           </Tooltip>
         </Stack>
 
-        <Typography textAlign="left">
-          {OPEN_SOURCE[index].contribution}
-        </Typography>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            My taskaways
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography textAlign="left">
+              {OPEN_SOURCE[index].contribution}
+            </Typography>
 
-        <ul>
-          {OPEN_SOURCE[index].takeAways.map((takeAway) => (
-            <li key={takeAway}>
-              <Typography fontSize="0.9em" textAlign="left">
-                {takeAway}
-              </Typography>
-            </li>
-          ))}
-        </ul>
-      </CardContent>
+            <ul>
+              {OPEN_SOURCE[index].takeAways.map((takeAway) => (
+                <li key={takeAway}>
+                  <Typography fontSize="0.9em" textAlign="left">
+                    {takeAway}
+                  </Typography>
+                </li>
+              ))}
+            </ul>
+          </AccordionDetails>
+        </Accordion>
+      </Container>
     </Card>
   );
 }

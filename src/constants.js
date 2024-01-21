@@ -87,7 +87,7 @@ export const CERTIFICATES = [
     institution: "freeCodeCamp",
     name: "JavaScript Algorithms & Data Structures",
     knowledges: [
-      "Regular expressions",
+      "Regex",
       "Data structures",
       "Algorithm scripting",
       "Object-oriented programming",

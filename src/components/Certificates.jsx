@@ -21,13 +21,13 @@ import { CERTIFICATES } from "../constants";
 function Certificates() {
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((prev) => (prev === CERTIFICATES.length - 1 ? 0 : prev + 1));
-    }, 5000);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setIndex((prev) => (prev === CERTIFICATES.length - 1 ? 0 : prev + 1));
+  //   }, 5000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   const disablePrev = index === 0;
   const disableNext = index === CERTIFICATES.length - 1;
@@ -44,7 +44,7 @@ function Certificates() {
       <CardMedia
         component="img"
         sx={{
-          maxWidth: { xs: "100%", md: "70%" },
+          maxWidth: { xs: "100%", md: "65%" },
           flex: { xs: 1, md: "auto" },
         }}
         image={CERTIFICATES[index].src}

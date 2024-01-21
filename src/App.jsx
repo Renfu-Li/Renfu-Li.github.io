@@ -59,7 +59,7 @@ function App() {
         Projects
       </Typography>
 
-      {/* <TickPages /> */}
+      <TickPages />
 
       <OpenSource />
 
