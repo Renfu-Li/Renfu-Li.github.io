@@ -1,6 +1,13 @@
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Box, IconButton, Link, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  IconButton,
+  Link,
+  Stack,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 
 function Introduction() {
   return (
@@ -27,10 +34,14 @@ function Introduction() {
             target="_blank"
             mr="2em"
           >
-            <LinkedInIcon color="primary" />
+            <Tooltip title="LinkedIn" placement="bottom">
+              <LinkedInIcon color="primary" />
+            </Tooltip>
           </Link>
           <Link href="https://github.com/Renfu-Li" target="_blank">
-            <GitHubIcon color="primary" />
+            <Tooltip title="GitHub" placement="bottom">
+              <GitHubIcon color="primary" />
+            </Tooltip>
           </Link>
         </Box>
       </Stack>

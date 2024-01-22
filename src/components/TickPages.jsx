@@ -4,6 +4,7 @@ import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { faNode, faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShare } from "@fortawesome/free-solid-svg-icons";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import {
@@ -101,6 +102,32 @@ function TickPages() {
           </Grid>
         ))}
       </Grid>
+
+      <Box mt="1.5em">
+        <Link
+          href="https://github.com/Renfu-Li/Tick-client"
+          target="_blank"
+          mr="2em"
+        >
+          <Tooltip title="Frontend repository" placement="top">
+            <FontAwesomeIcon icon={faReact} size="xl" />
+          </Tooltip>
+        </Link>
+        <Link
+          href="https://github.com/Renfu-Li/Tick-server"
+          target="_blank"
+          mr="2em"
+        >
+          <Tooltip title="Backend repository" placement="top">
+            <FontAwesomeIcon icon={faNode} size="xl" />
+          </Tooltip>
+        </Link>
+        <Link href="https://tick-o52t.onrender.com" target="_blank">
+          <Tooltip title="Have a try!" placement="top">
+            <FontAwesomeIcon icon={faShare} size="xl" />
+          </Tooltip>
+        </Link>
+      </Box>
     </Box>
   );
 }
