@@ -1,17 +1,19 @@
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 
 function Contact() {
   return (
     <Box
       textAlign="center"
       component="form"
-      width="50%"
+      width="70%"
       display="flex"
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
       mx="auto"
+      id="contact"
     >
+      <Typography variant="h4">Start the conversation</Typography>
       <TextField
         size="small"
         fullWidth
@@ -28,10 +30,14 @@ function Contact() {
         size="small"
         fullWidth
         margin="normal"
+        multiline
+        rows={8}
         placeholder="message"
       ></TextField>
 
-      <Button variant="outlined">Submit</Button>
+      <Button sx={{ my: "1.5em" }} variant="outlined">
+        Submit
+      </Button>
     </Box>
   );
 }

@@ -7,6 +7,7 @@ import {
   Avatar,
   Box,
   Button,
+  Divider,
   Grid,
   IconButton,
   Stack,
@@ -14,60 +15,60 @@ import {
   Typography,
 } from "@mui/material";
 
+import MenuBar from "./components/MenuBar";
 import TickPages from "./components/TickPages";
 import OpenSource from "./components/OpenSource";
 import Certificates from "./components/Certificates";
 import SmallProjects from "./components/SmallProjects";
+import Introduction from "./components/Introduction";
 import Contact from "./components/Contact";
 
 function App() {
   return (
-    <Box textAlign="center">
-      <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <Avatar>R</Avatar>
-        <div>
-          <Button>about</Button>
-          <Button>projects</Button>
-          <Button>contact</Button>
-        </div>
-      </Stack>
+    <Box>
+      <MenuBar />
 
-      <Stack direction="row" justifyContent="space-evenly" sx={{ my: "2em" }}>
-        <img
-          alt="personal photo"
-          height="200"
-          src="/src/assets/images/personal photo.png"
-        />
-        <Box>
-          <Typography variant="h3">Hi, I'am Renfu</Typography>
-          <Typography variant="h4">a web developer</Typography>
-          <Typography>based in Victoria, BC, Canada</Typography>
-          <IconButton>
-            <LinkedInIcon color="primary" />
-          </IconButton>
-          <IconButton>
-            <GitHubIcon color="primary" />
-          </IconButton>
-        </Box>
-      </Stack>
+      <Box textAlign="center" width="85%" maxWidth={1020} mx="auto">
+        <Introduction />
 
-      {/* <Typography variant="h3" textAlign="center">
+        {/* <Typography variant="h3" textAlign="center">
         About
       </Typography> */}
 
-      <Typography variant="h3" textAlign="center">
-        Projects
-      </Typography>
+        <Typography variant="h4" textAlign="center" id="projects">
+          Projects
+        </Typography>
 
-      <TickPages />
+        <Divider
+          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }}
+        />
 
-      <OpenSource />
+        <TickPages />
 
-      <SmallProjects />
+        <Divider
+          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "0.75px" }}
+        />
 
-      <Certificates />
+        <SmallProjects />
 
-      <Contact />
+        <Divider
+          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "0.75px" }}
+        />
+
+        <OpenSource />
+
+        <Divider
+          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }}
+        />
+
+        <Certificates />
+
+        <Divider
+          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }}
+        />
+
+        <Contact />
+      </Box>
     </Box>
   );
 }

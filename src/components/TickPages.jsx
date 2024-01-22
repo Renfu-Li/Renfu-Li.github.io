@@ -45,60 +45,63 @@ function TickPages() {
   const disableNext = index === TICK_PAGES.length - 1;
 
   return (
-    <Grid
-      container
-      justifyContent="space-between"
-      width="85%"
-      mx="auto"
-      rowSpacing={3}
-    >
-      {TICK_PAGES.map((page) => (
-        <Grid item key={page.id} xs={12} md={5.85}>
-          <Card
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              // width: "85%",
-              mx: "auto",
-            }}
-          >
-            <CardMedia
-              component="img"
-              width="100%"
-              sx={
-                {
-                  // maxWidth: { xs: "100%", lg: "70%" },
-                  // flex: { xs: 1, md: "auto" },
-                }
-              }
-              image={page.src}
-              alt={page.name}
-            />
+    <Box>
+      <Typography my="0.5em" variant="h5">
+        Tick
+      </Typography>
+      <Typography mb="0.5em" color="gray">
+        A full-fledge To-do app
+      </Typography>
 
-            <Box
+      <Grid container justifyContent="space-between" mx="auto" rowSpacing={3}>
+        {TICK_PAGES.map((page) => (
+          <Grid item key={page.id} xs={12} md={5.85}>
+            <Card
               sx={{
-                paddingBottom: "16px",
-                paddingLeft: "16px",
-                bgcolor: "rgb(225, 227, 232)",
+                display: "flex",
+                flexDirection: "column",
+                // width: "85%",
+                mx: "auto",
               }}
             >
-              <Stack justifyContent="space-between" height="100%">
-                <List dense>
-                  {page.features.map((feature) => (
-                    <ListItem key={feature}>
-                      <ListItemIcon sx={{ minWidth: "36px" }}>
-                        <AutoAwesomeOutlinedIcon fontSize="small" />
-                      </ListItemIcon>
-                      <Typography fontSize="0.9em">{feature}</Typography>
-                    </ListItem>
-                  ))}
-                </List>
-              </Stack>
-            </Box>
-          </Card>
-        </Grid>
-      ))}
-    </Grid>
+              <CardMedia
+                component="img"
+                width="100%"
+                sx={
+                  {
+                    // maxWidth: { xs: "100%", lg: "70%" },
+                    // flex: { xs: 1, md: "auto" },
+                  }
+                }
+                image={page.src}
+                alt={page.name}
+              />
+
+              <Box
+                sx={{
+                  paddingBottom: "16px",
+                  paddingLeft: "16px",
+                  bgcolor: "rgb(225, 227, 232)",
+                }}
+              >
+                <Stack justifyContent="space-between" height="100%">
+                  <List dense>
+                    {page.features.map((feature) => (
+                      <ListItem key={feature}>
+                        <ListItemIcon sx={{ minWidth: "36px" }}>
+                          <AutoAwesomeOutlinedIcon fontSize="small" />
+                        </ListItemIcon>
+                        <Typography fontSize="0.9em">{feature}</Typography>
+                      </ListItem>
+                    ))}
+                  </List>
+                </Stack>
+              </Box>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 }
 

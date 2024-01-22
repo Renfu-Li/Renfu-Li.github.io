@@ -38,7 +38,7 @@ export const CERTIFICATES = [
   {
     src: "/src/assets/images/FullStackOpen-core.png",
     institution: "University of Helsinki",
-    name: "Full Stack Open - core",
+    name: "Full Stack Open - Core",
     knowledges: [
       "React",
       "Node",
@@ -128,11 +128,10 @@ export const OPEN_SOURCE = [
     contribution:
       "I added an @property decorator to protect _out_path, and modified the code to make the it accept both str & Path.",
     takeAways: [
-      "get used to read & understand an existing codebase, and modify code to solve issues",
-      "familiarized myself with Git and GitHub collaborating workflow (e.g. amending commits & rebasing) ",
-      "gained real-life experiences on Python OOP, such as using decorators to protect an attribute",
-      "dived deeper into Python's native libraries (e.g. pathlib) and related PEPs",
-      "learned how to effectively communicate with collaborators",
+      "Read, understand and modify an existing codebase",
+      "Git & GitHub collaborating workflow (e.g. amend commits & rebase) ",
+      "Real-life experiences on Python OOP, such as using decorators to protect an attribute",
+      "Python's native libraries (e.g. pathlib) & related PEPs",
     ],
   },
   {
@@ -142,9 +141,10 @@ export const OPEN_SOURCE = [
     contribution:
       "I wrote docstrings for a section of core methods, using the NumPy style",
     takeAways: [
-      "get used to read & understand code created by others",
-      "learned to use NumPy style to document code",
-      "gained knowledge on automatically generate documentation from docstring",
+      "Get used to read & understand code created by others",
+      "Use NumPy style to document code",
+      "Knowledge on automatically generate documentation from docstring",
+      "Effectively communicate with collaborators",
     ],
   },
 ];
