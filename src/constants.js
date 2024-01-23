@@ -1,6 +1,6 @@
 export const TICK_PAGES = [
   {
-    src: "/src/assets/images/list.png",
+    src: "/images/list.png",
     name: "To-do list",
     features: [
       "Effortlessly create tasks with a due date",
@@ -9,7 +9,7 @@ export const TICK_PAGES = [
     id: 0,
   },
   {
-    src: "/src/assets/images/calendar.png",
+    src: "/images/calendar.png",
     name: "Calendar",
     features: [
       "Click to add new task directly in calendar",
@@ -18,7 +18,7 @@ export const TICK_PAGES = [
     id: 1,
   },
   {
-    src: "/src/assets/images/focus.png",
+    src: "/images/focus.png",
     name: "Focus",
     features: [
       "Choose a task to start a Focus",
@@ -27,7 +27,7 @@ export const TICK_PAGES = [
     id: 2,
   },
   {
-    src: "/src/assets/images/statistics.png",
+    src: "/images/statistics.png",
     name: "Statistics",
     features: ["Summary of focus hours", "Trend charts of focus hours"],
     id: 3,
@@ -36,7 +36,7 @@ export const TICK_PAGES = [
 
 export const CERTIFICATES = [
   {
-    src: "/src/assets/images/FullStackOpen-core.png",
+    src: "/images/FullStackOpen-core.png",
     institution: "University of Helsinki",
     name: "Full Stack Open - Core",
     knowledges: [
@@ -55,35 +55,35 @@ export const CERTIFICATES = [
     link: "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/b4eae0973be90ed495eee9e667e7ea95",
   },
   {
-    src: "/src/assets/images/Typescript-FullStackOpen.png",
+    src: "/images/Typescript-FullStackOpen.png",
     institution: "University of Helsinki",
     name: "Full Stack Open - TypeScript",
     knowledges: ["TypeScript"],
     link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-typescript/en/e594c94ae89bf51b11504b78c5c7add1",
   },
   {
-    src: "/src/assets/images/responsive web design.png",
+    src: "/images/responsive web design.png",
     institution: "freeCodeCamp",
     name: "Responsive Web Desisn",
     knowledges: ["HTML", "CSS"],
     link: "https://www.freecodecamp.org/certification/renfu/responsive-web-design",
   },
   {
-    src: "/src/assets/images/front end.png",
+    src: "/images/front end.png",
     institution: "freeCodeCamp",
     name: "Front End Development Libraries",
     knowledges: ["Bootstrap", "jQuery", "SASS", "React", "Redux"],
     link: "https://www.freecodecamp.org/certification/renfu/front-end-development-libraries",
   },
   {
-    src: "/src/assets/images/back end.png",
+    src: "/images/back end.png",
     institution: "freeCodeCamp",
     name: "Back End Development & APIs",
     knowledges: ["Node", "Express", "Mongoose"],
     link: "https://www.freecodecamp.org/certification/renfu/back-end-development-and-apis",
   },
   {
-    src: "/src/assets/images/JS algorithm & data structure.png",
+    src: "/images/JS algorithm & data structure.png",
     institution: "freeCodeCamp",
     name: "JavaScript Algorithms & Data Structures",
     knowledges: [
@@ -99,22 +99,22 @@ export const CERTIFICATES = [
 
 export const SMALL_PROJECTS = [
   {
-    src: "/src/assets/images/calculator.png",
+    src: "/images/calculator.png",
     name: "Calculator",
     link: "https://codepen.io/Renfu-Li/pen/MWLgmZo",
   },
   {
-    src: "/src/assets/images/markdown-previewer.png",
+    src: "/images/markdown-previewer.png",
     name: "Markdown previewer",
     link: "https://codepen.io/Renfu-Li/pen/XWovVyN",
   },
   {
-    src: "/src/assets/images/pomodoro-clock.png",
+    src: "/images/pomodoro-clock.png",
     name: "Pomodoro clock",
     link: "https://codepen.io/Renfu-Li/pen/zYeYKqV",
   },
   {
-    src: "/src/assets/images/drum-machine.png",
+    src: "/images/drum-machine.png",
     name: "Drum machine",
     link: "https://codepen.io/Renfu-Li/pen/bGzbVar",
   },
@@ -122,7 +122,7 @@ export const SMALL_PROJECTS = [
 
 export const OPEN_SOURCE = [
   {
-    src: "/src/assets/images/outPath.png",
+    src: "/images/outPath.png",
     link: "https://github.com/OceanNetworksCanada/api-python-client/pull/20",
     name: "first open-source contribution",
     contribution:
@@ -135,7 +135,7 @@ export const OPEN_SOURCE = [
     ],
   },
   {
-    src: "/src/assets/images/docString.png",
+    src: "/images/docString.png",
     link: "https://github.com/OceanNetworksCanada/api-python-client/pull/21",
     name: "second open-source contribution",
     contribution:
