@@ -7,10 +7,8 @@ import {
   CardContent,
   CardMedia,
   Chip,
-  Grid,
   IconButton,
   Link,
-  Paper,
   Stack,
   Typography,
 } from "@mui/material";
@@ -45,15 +43,20 @@ function Certificates() {
           flexDirection: { xs: "column", md: "row" },
         }}
       >
-        <CardMedia
-          component="img"
+        <Link
+          href={CERTIFICATES[index].link}
+          target="_blank"
           sx={{
             maxWidth: { xs: "100%", md: "65%" },
             flex: { xs: 1, md: "auto" },
           }}
-          image={CERTIFICATES[index].src}
-          alt={CERTIFICATES[index].name}
-        />
+        >
+          <CardMedia
+            component="img"
+            image={CERTIFICATES[index].src}
+            alt={CERTIFICATES[index].name}
+          />
+        </Link>
 
         <CardContent sx={{ width: "100%" }}>
           <Stack justifyContent="space-between" height="100%">
