@@ -1,19 +1,4 @@
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-
-import {
-  Avatar,
-  Box,
-  Button,
-  Divider,
-  Grid,
-  IconButton,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 
 import MenuBar from "./components/MenuBar";
 import TickPages from "./components/TickPages";
@@ -28,47 +13,36 @@ function App() {
     <Box>
       <MenuBar />
 
-      <Box textAlign="center" width="85%" maxWidth={1020} mx="auto">
-        <Introduction />
+      {/* <Box textAlign="center" width="85%" maxWidth={1020} mx="auto"> */}
+      <Introduction />
+      <Typography variant="h4" textAlign="center" id="projects">
+        Projects
+      </Typography>
 
-        {/* <Typography variant="h3" textAlign="center">
-        About
-      </Typography> */}
+      <Divider sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }} />
 
-        <Typography variant="h4" textAlign="center" id="projects">
-          Projects
-        </Typography>
+      <TickPages />
 
-        <Divider
-          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }}
-        />
+      <Divider
+        sx={{ my: "2em", borderColor: "skyblue", borderWidth: "0.75px" }}
+      />
 
-        <TickPages />
+      <SmallProjects />
 
-        <Divider
-          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "0.75px" }}
-        />
+      <Divider
+        sx={{ my: "2em", borderColor: "skyblue", borderWidth: "0.75px" }}
+      />
 
-        <SmallProjects />
+      <OpenSource />
 
-        <Divider
-          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "0.75px" }}
-        />
+      <Divider sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }} />
 
-        <OpenSource />
+      <Certificates />
 
-        <Divider
-          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }}
-        />
+      <Divider sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }} />
 
-        <Certificates />
-
-        <Divider
-          sx={{ my: "2em", borderColor: "skyblue", borderWidth: "1px" }}
-        />
-
-        <Contact />
-      </Box>
+      <Contact />
+      {/* </Box> */}
     </Box>
   );
 }

@@ -31,7 +31,7 @@ function OpenSource() {
   const disableNext = index === OPEN_SOURCE.length - 1;
 
   return (
-    <Box>
+    <Box textAlign="center" width="85%" maxWidth={1020} mx="auto">
       <Typography mb="0.5em" variant="h5">
         Open-source contributions
       </Typography>

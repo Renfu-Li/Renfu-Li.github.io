@@ -31,7 +31,13 @@ function Certificates() {
   const disableNext = index === CERTIFICATES.length - 1;
 
   return (
-    <Box id="certificates">
+    <Box
+      id="certificates"
+      textAlign="center"
+      width="85%"
+      maxWidth={1020}
+      mx="auto"
+    >
       <Typography mb="0.5em" variant="h4">
         Certificates
       </Typography>

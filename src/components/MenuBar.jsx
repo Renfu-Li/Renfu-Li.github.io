@@ -1,4 +1,4 @@
-import { Avatar, Button, Link, Stack } from "@mui/material";
+import { Avatar, Button, Stack } from "@mui/material";
 
 function MenuBar() {
   return (
@@ -6,10 +6,12 @@ function MenuBar() {
       direction="row"
       justifyContent="space-between"
       alignItems="center"
-      bgcolor="rgb(225, 227, 232)"
+      bgcolor="white"
       padding="1em"
+      height={72}
+      boxSizing="border-box"
     >
-      <Avatar>RL</Avatar>
+      <Avatar>R</Avatar>
       <div>
         <Button>Projects</Button>
         <Button href="#certificates">Certificates</Button>

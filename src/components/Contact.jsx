@@ -12,6 +12,7 @@ function Contact() {
       alignItems="center"
       mx="auto"
       id="contact"
+      maxWidth={630}
     >
       <Typography variant="h4">Start the conversation</Typography>
       <TextField

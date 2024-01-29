@@ -1,52 +1,27 @@
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
-import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { faNode, faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShare } from "@fortawesome/free-solid-svg-icons";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import {
   Box,
-  Button,
   Grid,
-  IconButton,
   Link,
   List,
   ListItem,
   ListItemIcon,
-  ListItemText,
-  Paper,
-  Slide,
   Stack,
   Tooltip,
   Typography,
   Card,
-  CardContent,
   CardMedia,
-  Chip,
-  Container,
 } from "@mui/material";
-import { useEffect, useState } from "react";
+
 import { TICK_PAGES } from "../constants";
 
 function TickPages() {
-  const [index, setIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setIndex((prev) => (prev === TICK_PAGES.length - 1 ? 0 : prev + 1));
-  //   }, 5000);
-
-  //   return () => clearInterval(intervalId);
-  // }, []);
-
-  const disablePrev = index === 0;
-  const disableNext = index === TICK_PAGES.length - 1;
-
   return (
-    <Box>
+    <Box textAlign="center" width="85%" maxWidth={1020} mx="auto">
       <Typography my="0.5em" variant="h5">
         Tick
       </Typography>
@@ -61,19 +36,12 @@ function TickPages() {
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                // width: "85%",
                 mx: "auto",
               }}
             >
               <CardMedia
                 component="img"
                 width="100%"
-                sx={
-                  {
-                    // maxWidth: { xs: "100%", lg: "70%" },
-                    // flex: { xs: 1, md: "auto" },
-                  }
-                }
                 image={page.src}
                 alt={page.name}
               />

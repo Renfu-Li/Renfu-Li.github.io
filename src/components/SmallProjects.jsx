@@ -1,12 +1,9 @@
 import {
   Box,
   Card,
-  CardContent,
   CardMedia,
   Grid,
-  IconButton,
   Link,
-  Paper,
   Stack,
   Tooltip,
   Typography,
@@ -17,7 +14,7 @@ import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 
 function SmallProjects() {
   return (
-    <Box>
+    <Box textAlign="center" width="85%" maxWidth={1020} mx="auto">
       <Typography mb="0.5em" variant="h5">
         Frontend projects
       </Typography>
