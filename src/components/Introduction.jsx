@@ -1,13 +1,6 @@
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {
-  Box,
-  IconButton,
-  Link,
-  Stack,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Box, Link, Stack, Tooltip, Typography } from "@mui/material";
 
 function Introduction() {
   return (
@@ -15,8 +8,11 @@ function Introduction() {
       direction="row"
       justifyContent="space-evenly"
       alignItems="center"
-      sx={{ my: "2em" }}
-      height="350px"
+      sx={{
+        mb: "2em",
+        backgroundImage: "url(/images/background.png)",
+      }}
+      height="calc(100vh - 72px)"
     >
       <img alt="personal photo" height="200" src="/images/personal photo.png" />
       <Stack height={250} justifyContent="space-evenly">
