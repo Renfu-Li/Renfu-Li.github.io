@@ -26,7 +26,7 @@ function TickPages() {
         Tick
       </Typography>
       <Typography mb="0.5em" color="gray">
-        A full-fledge To-do app
+        A full-fledged To-do app
       </Typography>
 
       <Grid container justifyContent="space-between" mx="auto" rowSpacing={3}>
@@ -48,8 +48,7 @@ function TickPages() {
 
               <Box
                 sx={{
-                  paddingBottom: "16px",
-                  paddingLeft: "16px",
+                  paddingLeft: "4px",
                   bgcolor: "rgb(225, 227, 232)",
                 }}
               >
@@ -90,7 +89,7 @@ function TickPages() {
             <FontAwesomeIcon icon={faNode} size="xl" />
           </Tooltip>
         </Link>
-        <Link href="https://tick-o52t.onrender.com" target="_blank">
+        <Link href="https://ticktrack.onrender.com" target="_blank">
           <Tooltip title="Have a try!" placement="top">
             <FontAwesomeIcon icon={faShare} size="xl" />
           </Tooltip>

@@ -5,3 +5,8 @@ html,
   margin: 0;
   font-family: "roboto", "Helvetica Neue", "sans-serif";
 }
+
+.menu-item:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
