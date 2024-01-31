@@ -7,6 +7,6 @@ html,
 }
 
 .menu-item:hover {
-  background-color: #3b82f6;
+  background-color: rgb(60, 197, 235);
   color: #ffffff;
 }

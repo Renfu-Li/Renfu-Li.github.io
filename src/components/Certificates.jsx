@@ -35,11 +35,15 @@ function Certificates() {
       id="certificates"
       textAlign="center"
       width="85%"
-      maxWidth={1020}
       mx="auto"
+      paddingTop="3.5em"
     >
-      <Typography mb="0.5em" variant="h4">
+      <Typography mb="0.5em" variant="h3">
         Certificates
+      </Typography>
+
+      <Typography color="#3b82f6" variant="h5" mt="1em" mb="0.5em">
+        What I learned
       </Typography>
 
       <Card

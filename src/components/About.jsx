@@ -5,13 +5,13 @@ function About() {
   const techNames = Object.keys(TECH_STACK);
 
   return (
-    <Box bgcolor="white" paddingY="2em">
-      <Box width="85%" maxWidth={1020} mx="auto">
+    <Box bgcolor="white" paddingY="3.5em" id="about">
+      <Box width="85%" mx="auto">
         <Typography textAlign="center" variant="h3">
           About me
         </Typography>
 
-        <Typography color="#3b82f6" variant="h5" mt="1em">
+        <Typography color="#3b82f6" variant="h5" mt="1.5em" mb="1em">
           Who am I
         </Typography>
 
@@ -33,12 +33,11 @@ function About() {
         <ul>
           <li style={{ marginBottom: "0.5em" }}>
             I enjoy experimenting with new methods and crafting small products,
-            with a primary focus on <b>solving meaningful problems</b> for
-            people
+            with a primary focus on <b>solving meaningful problems</b>
           </li>
           <li style={{ marginBottom: "0.5em" }}>
             I consider <b>collegues as internal clients</b>, and I am committed
-            to working together to successfully complete the projects.
+            to working together to successfully complete the projects
           </li>
           <li style={{ marginBottom: "0.5em" }}>
             When I build, I take the time to <b>understand the problem well</b>{" "}
@@ -46,11 +45,11 @@ function About() {
           </li>
           <li style={{ marginBottom: "0.5em" }}>
             When I learn, I like to <b>play with code, and take notes</b> using
-            Obsidian to better understand & organize it
+            Obsidian to better understand & organize the material
           </li>
         </ul>
 
-        <Typography color="#3b82f6" variant="h5" mt="1em">
+        <Typography color="#3b82f6" variant="h5" mt="1.5em">
           What I can do
         </Typography>
         {techNames.map((name) => (
@@ -69,7 +68,6 @@ function About() {
               {TECH_STACK[name].map((tech) => (
                 <Grid item key={tech.name} mx="1em" my="0.3em">
                   <Stack
-                    container
                     direction="row"
                     justifyContent="flex-start"
                     alignItems="center"

@@ -21,12 +21,12 @@ import { TICK_PAGES } from "../constants";
 
 function TickPages() {
   return (
-    <Box textAlign="center" width="85%" maxWidth={1020} mx="auto">
-      <Typography my="0.5em" variant="h5">
-        Tick
+    <Box>
+      <Typography my="0.5em" color="#3b82f6" variant="h5">
+        TickTrack
       </Typography>
       <Typography mb="0.5em" color="gray">
-        A full-fledged To-do app
+        A full-fledged to-do app inspired by TickTick
       </Typography>
 
       <Grid container justifyContent="space-between" mx="auto" rowSpacing={3}>

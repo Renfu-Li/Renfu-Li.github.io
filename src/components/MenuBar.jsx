@@ -3,6 +3,10 @@ import { Avatar, Link, Stack } from "@mui/material";
 function MenuBar() {
   const menuItems = [
     {
+      title: "About",
+      id: "about",
+    },
+    {
       title: "Projects",
       id: "projects",
     },
@@ -22,15 +26,15 @@ function MenuBar() {
       justifyContent="space-between"
       alignItems="center"
       bgcolor="white"
-      paddingX="1em"
-      height={64}
+      paddingX="0.75em"
+      height={56}
       boxSizing="border-box"
       position="sticky"
       top={0}
       boxShadow="0px 2px 4px rgba(0, 0, 0, 0.2)"
       zIndex={1000}
     >
-      <Avatar>R</Avatar>
+      <Avatar sx={{ width: 36, height: 36 }}>R</Avatar>
       <div>
         {menuItems.map((item) => (
           <Link
@@ -41,7 +45,7 @@ function MenuBar() {
             href={`#${item.id}`}
             padding="0.75em"
             borderRadius="0.375em"
-            ml="3em"
+            ml="1.5em"
           >
             {item.title}
           </Link>

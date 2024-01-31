@@ -10,7 +10,6 @@ function Introduction() {
       justifyContent="space-evenly"
       alignItems="center"
       sx={{
-        mb: "2em",
         backgroundImage: "url(/images/background.png)",
         backgroundSize: "cover",
       }}

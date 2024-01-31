@@ -148,3 +148,96 @@ export const OPEN_SOURCE = [
     ],
   },
 ];
+
+export const TECH_STACK = {
+  Languages: [
+    {
+      name: "JavaScript",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "TypeScript",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+    },
+    {
+      name: "Python",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+  ],
+  Frontend: [
+    {
+      name: "HTML",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+    },
+    {
+      name: "Tailwind CSS",
+      src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    },
+    {
+      name: "Bootstrap",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
+    },
+    {
+      name: "MUI",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    },
+    {
+      name: "Sass",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+    },
+    {
+      name: "React",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    },
+    {
+      name: "Redux",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+    },
+  ],
+  Backend: [
+    {
+      name: "NodeJS",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    },
+    {
+      name: "Express",
+      src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+    },
+    {
+      name: "MongoDB",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg",
+    },
+    {
+      name: "MySQL",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg",
+    },
+  ],
+  Testing: [
+    {
+      name: "Jest",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+    },
+    {
+      name: "Cypress",
+      src: "https://asset.brandfetch.io/idIq_kF0rb/idv3zwmSiY.jpeg",
+    },
+    {
+      name: "Selenium",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg",
+    },
+  ],
+  Tools: [
+    {
+      name: "Git",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    },
+    {
+      name: "Postman",
+      src: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+    },
+  ],
+};

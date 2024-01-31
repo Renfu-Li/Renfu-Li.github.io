@@ -1,4 +1,6 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmailIcon from "@mui/icons-material/Email";
 
 function Contact() {
   return (
@@ -10,11 +12,24 @@ function Contact() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      paddingTop="3.5em"
       mx="auto"
       id="contact"
       maxWidth={630}
     >
-      <Typography variant="h4">Start the conversation</Typography>
+      <Typography variant="h3">What can I do for you?</Typography>
+
+      <Stack justifyContent="flex-start" my="1em">
+        <Stack direction="row" my="0.5em">
+          <EmailIcon />
+          <Typography ml="1em">renfu.li.ca@gmail.com</Typography>
+        </Stack>
+        <Stack direction="row" my="0.5em">
+          <LocationOnIcon />
+          <Typography ml="1em">Victoria, BC, Canada</Typography>
+        </Stack>
+      </Stack>
+
       <TextField
         size="small"
         fullWidth
