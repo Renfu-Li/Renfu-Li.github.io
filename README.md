@@ -1,8 +1,10 @@
-# React + Vite
+Hi! This is my personal portfolio page, answering the following questions:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Who am I? -- a brief introduction
+- What I can do? -- technical skills
+- What I built?
+  - [TickTrack](https://ticktrack.onrender.com/) -- all-in-one to do app, including to-do list, calendar, focus and statistics
+  - Open-source contributions
+  - Frontend projects
+- What I learned? -- lists of certificates I obtained along the way
+- What can I do for you? -- contact information

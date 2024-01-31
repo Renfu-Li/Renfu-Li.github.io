@@ -34,7 +34,7 @@ function About() {
             with a primary focus on <b>solving valuable problems</b>
           </li>
           <li style={{ marginBottom: "0.5em" }}>
-            I consider <b>collegues as internal clients</b>, and I am committed
+            I consider <b>colleagues as internal clients</b>, and I am committed
             to working together to successfully complete the projects
           </li>
           <li style={{ marginBottom: "0.5em" }}>
