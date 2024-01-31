@@ -16,24 +16,22 @@ function About() {
         </Typography>
 
         <Typography mb="1em">
-          I am a self-taught <b>Full-stack developer</b>, currently{" "}
-          <b>looking for an opportunity</b> to help deliver values with my
-          skills.
+          I am a self-taught Full-stack developer, currently{" "}
+          <b>seeking opportunities</b> to contribute value with my skills.
         </Typography>
 
         <Typography>
-          Previously, I majored in Archaeology and Philolosophy, and a semester
-          of archaeological fieldwork in Shaanxi is still one of my most
-          cherished memories. Judged from my majors, I certainly wan&apos;t
-          naturally interested in programming, but when I had a chance to
-          experiment with it, I found it to be{" "}
-          <b>a magic, yet understandable.</b>{" "}
+          Previously, I majored in Archaeology and Philosophy, and a semester of
+          archaeological fieldwork in Shaanxi is still one of my most cherished
+          memories. Judged from my majors, I certainly wan&apos;t naturally
+          interested in programming, but when I had a chance to experiment with
+          it, I found it to be <b>a magic, yet understandable.</b>{" "}
         </Typography>
 
         <ul>
           <li style={{ marginBottom: "0.5em" }}>
             I enjoy experimenting with new methods and crafting small products,
-            with a primary focus on <b>solving meaningful problems</b>
+            with a primary focus on <b>solving valuable problems</b>
           </li>
           <li style={{ marginBottom: "0.5em" }}>
             I consider <b>collegues as internal clients</b>, and I am committed
@@ -41,7 +39,7 @@ function About() {
           </li>
           <li style={{ marginBottom: "0.5em" }}>
             When I build, I take the time to <b>understand the problem well</b>{" "}
-            with mind maps, then <b>address the problems atomically</b>
+            with mind maps, then address the problems atomically
           </li>
           <li style={{ marginBottom: "0.5em" }}>
             When I learn, I like to <b>play with code, and take notes</b> using

@@ -6,7 +6,7 @@ import { Box, Link, Stack, Tooltip, Typography } from "@mui/material";
 function Introduction() {
   return (
     <Stack
-      direction="row"
+      direction={{ xs: "column", sm: "row" }}
       justifyContent="space-evenly"
       alignItems="center"
       sx={{

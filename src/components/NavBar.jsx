@@ -1,6 +1,6 @@
 import { Avatar, Link, Stack } from "@mui/material";
 
-function MenuBar() {
+function NavBar() {
   const menuItems = [
     {
       title: "About",
@@ -45,7 +45,7 @@ function MenuBar() {
             href={`#${item.id}`}
             padding="0.75em"
             borderRadius="0.375em"
-            ml="1.5em"
+            ml="0.5em"
           >
             {item.title}
           </Link>
@@ -55,4 +55,4 @@ function MenuBar() {
   );
 }
 
-export default MenuBar;
+export default NavBar;

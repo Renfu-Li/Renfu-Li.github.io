@@ -130,8 +130,8 @@ export const OPEN_SOURCE = [
     takeAways: [
       "Read, understand and modify an existing codebase",
       "Git & GitHub collaborating workflow (e.g. amend commits & rebase) ",
-      "Real-life experiences on Python OOP, such as using decorators to protect an attribute",
-      "Python's native libraries (e.g. pathlib) & related PEPs",
+      "Real-life experiences on Python OOP",
+      "Python's native libraries & related PEPs",
     ],
   },
   {
@@ -141,9 +141,9 @@ export const OPEN_SOURCE = [
     contribution:
       "I wrote docstrings for a section of core methods, using the NumPy style",
     takeAways: [
-      "Get used to read & understand code created by others",
+      "Get familiar with a new codebase",
       "Use NumPy style to document code",
-      "Knowledge on automatically generate documentation from docstring",
+      "Automatically generate documentation from docstrings",
       "Effectively communicate with collaborators",
     ],
   },

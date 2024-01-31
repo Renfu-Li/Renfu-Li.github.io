@@ -22,7 +22,7 @@ function OpenSource() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex((prev) => (prev === OPEN_SOURCE.length - 1 ? 0 : prev + 1));
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(intervalId);
   }, []);

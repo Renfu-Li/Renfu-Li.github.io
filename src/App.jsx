@@ -1,17 +1,16 @@
 import { Box } from "@mui/material";
 
-import MenuBar from "./components/MenuBar";
+import NavBar from "./components/NavBar";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
-
 import Contact from "./components/Contact";
 
 function App() {
   return (
     <Box>
-      <MenuBar />
+      <NavBar />
 
       {/* <Box textAlign="center" width="85%" maxWidth={1020} mx="auto"> */}
       <Introduction />

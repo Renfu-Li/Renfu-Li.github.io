@@ -52,7 +52,7 @@ function Contact() {
       ></TextField>
 
       <Button sx={{ my: "1.5em" }} variant="outlined">
-        Submit
+        Send
       </Button>
     </Box>
   );
