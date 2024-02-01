@@ -11,7 +11,7 @@ function About() {
           About me
         </Typography>
 
-        <Typography color="#3b82f6" variant="h5" mt="1.5em" mb="1em">
+        <Typography color="#3b82f6" variant="h5" mt="1.5em" mb="0.5em">
           Who am I
         </Typography>
 
@@ -26,6 +26,10 @@ function About() {
           memories. Judged from my majors, I certainly wan&apos;t naturally
           interested in programming, but when I had a chance to experiment with
           it, I found it to be <b>a magic, yet understandable.</b>{" "}
+        </Typography>
+
+        <Typography color="#3b82f6" variant="h5" mt="1.5em" mb="0.5em">
+          What I love
         </Typography>
 
         <ul>
