@@ -197,6 +197,10 @@ export const TECH_STACK = {
       name: "Redux",
       src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
     },
+    {
+      name: "Next.js",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    },
   ],
   Backend: [
     {
@@ -206,6 +210,10 @@ export const TECH_STACK = {
     {
       name: "Express",
       src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+    },
+    {
+      name: "Flask",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
     },
     {
       name: "MongoDB",
