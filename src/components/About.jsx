@@ -23,7 +23,7 @@ function About() {
         <Typography>
           Previously, I majored in Archaeology and Philosophy, and a semester of
           archaeological fieldwork in Shaanxi is still one of my most cherished
-          memories. Judged from my majors, I certainly wan&apos;t naturally
+          memories. Judged from my majors, I certainly wasn&apos;t naturally
           interested in programming, but when I had a chance to experiment with
           it, I found it to be <b>a magic, yet understandable.</b>{" "}
         </Typography>
