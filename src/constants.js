@@ -221,7 +221,7 @@ export const TECH_STACK = {
     },
     {
       name: "MySQL",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
     },
   ],
   Testing: [
